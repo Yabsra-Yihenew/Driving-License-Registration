@@ -1,0 +1,5 @@
+Full name -> Mr Y
+Phone number -> +251123456789
+Age -> 55
+Applied course -> Automobile
+Class start : 12/4/2024
