@@ -203,5 +203,37 @@ notAVA:
     course_no=p.course_type-1;
 cout<<"\n----------------------------------\n";
 }
+void display(personal_info p)
+{
+	time_t t;
 
+	t=time(NULL);
+	tm* now =localtime(&t);
+	string d=to_string((now->tm_mday));
+	string m=to_string((now->tm_mon+2));
+	string y=to_string((now->tm_year+1900));
+	string a=d+"/"+m+"/"+y;
+
+    system("cls");
+	short border=fNamewidth+14+12+29;
+	cout<<"+";
+	for(short i=1;i<=border;i++)cout<<"=";
+	cout<<"+\n";
+	cout<<left<<"| "<<setw(fNamewidth)<<"Full Name"
+		<<" | "<<setw(14)<<"Phone number"<<" | "
+		<<setw(12)<<"Course type"<<" | "<<setw(18)<<"starting date"
+		<<" | "<<endl;
+		cout<<"+";
+	for(short i=1;i<=border;i++)cout<<"=";
+	cout<<"+\n";
+
+	cout<<left<<"| "<<setw(fNamewidth)<<p.Fname
+		<<" | "<<setw(14)<<"+251"+p.Phone_no<<" | "
+		<<setw(12)<<course_type[course_no]<<" | "<<setw(18)<<a	<<" |"<<endl;
+		cout<<"+";
+	for(short i=1;i<=border;i++)cout<<"-";
+	cout<<"+\n";
+
+	getchar();
+}
 
