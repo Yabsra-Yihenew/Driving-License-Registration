@@ -7,7 +7,7 @@ struct personal_info
 {
 	string Fname;
 	string Phone_no;
-    string date_of_begining;
+    	string date_of_begining;
 	short Age;
 	short Edu_level;
 	short Past_exp;
