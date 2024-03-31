@@ -239,3 +239,12 @@ void display(personal_info p)
 
 	getchar();
 }
+
+int main()
+{
+    system("color E0");
+	personal_info d;
+	Pers_info(d);
+	display(d);
+	return 0;
+}
