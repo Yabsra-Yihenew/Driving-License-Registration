@@ -1,4 +1,4 @@
-Full name -> Mr Y
+Full name -> Bob
 Phone number -> +251123456789
 Age -> 55
 Applied course -> Automobile
